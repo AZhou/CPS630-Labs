@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Advanced Art Work Search
+</title>
+<h1>Advanced Art Work Search</h1>
+</head>
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	}
+th, td {
+		padding: 5px;
+		text-align: left
+	}
+</style>
+<body>
+	/*<script>
+		$(document).ready(function(){
+			$("radio").click(function(){
+				$("#art1").fadeIn();
+				$("#art2").fadeIn();
+				$("#art3").fadeIn();
+			});
+		});
+	</script>
+	*/
+	<div>
+		<form>
+			<input type="text" name="search" value="">
+			<input type="submit" value="Submit">
+		</form>
+		Action:
+		<select>
+		<option value="0">Archive</option> 
+		<option value="1">Edit</option> 
+		<option value="2">Delete</option>
+		<option value="3">Collections</option>		
+		</select>
+	
+	
+		Genre:
+		<select>
+		<option value="0">Baroque</option>
+		<option value="1">Renaissance</option> 
+		<option value="2">Realism</option> 
+		</select>
+	</div>
+	
+
+		<table>
+		
+			<tr>
+			<td></td>
+			<td></td>
+				<th>Title</th>
+				<th colspan="2">Artist</th>
+				<th colspan="3">Year</th>
+				<th colspan="4">Genre</th>
+				<th colspan="5">Actions</th>
+			</tr>
+			<form>
+				
+				<tr>
+					<td>
+					<input type="radio" name="ArtR" value="N/A" id="rb">Baroque<br>
+					<input type="radio" name="ArtR2" value="N/A" id="rb"><br>
+					</td>
+					<td><img src="baroque1.jpg" alt="I don't understand this art" style="width:289px;height:179px;"></td>
+					<td>De Matteis Triumph of the Immaculate Anagoria</td>
+					<td colspan="2">Paolo de Martteis</td>
+					<td colspan="3">1710-1715</td>
+					<td colspan="4">Baroque</td>
+					<td colspan="5">
+						<a href="http://www.google.ca">
+							<button type="button">Archive</button>
+							<button type="button">Edit</button>
+							<button type="button">Delete</button>
+							<button type="button">Collections</button>
+						</a>
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type="radio" name="Art2R" value="N/A">Renaissance<br>
+					<input type="radio" name="Art2R2" value="N/A"><br>
+					</td>
+					<td><img src="renaissance.jpg" alt="Renaissance Art" style="width:289px;height:179px;"></td>
+					<td>The Delivery of the Keys to Saint Peter</td>
+					<td colspan="2">Pietro Perugino</td>
+					<td colspan="3">1481-1482</td>
+					<td colspan="4">Renaissance</td>
+					<td colspan="5">
+						<a href="http://www.google.ca">
+							<button type="button">Archive</button>
+							<button type="button">Edit</button>
+							<button type="button">Delete</button>
+							<button type="button">Collections</button>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type="radio" name="Art3R" value="N/A">Realism<br>
+					<input type="radio" name="Art3R2" value="N/A"><br>
+					</td>
+					<td><img src="realism2.jpg" alt="Realism Art" style="width:289px;height:179px;"></td>
+					<td>Mona Lisa</td>
+					<td colspan="2">Leonardo Da Vinci</td> 
+					<td colspan="3">1503-1517</td>
+					<td colspan="4">Realism</td>
+					<td colspan="5">
+						<form action="http:www.google.ca">
+							<input type="submit" value="Archive">
+							<input type="submit" value="Edit">
+							<input type="submit" value="Delete">
+							<input type="submit" value="Collections">
+						</form>
+					</td>
+				</tr>
+			</form>
+	</table>
+</body>
+
+</html>

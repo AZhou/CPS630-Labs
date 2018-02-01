@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Advanced Art Work Search
+	</title>
+	<h1>Advanced Art Work Search</h1>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			$(".opt2").click(function(){
+				$("#baroque").fadeOut();
+			});
+				
+			$(".opt12").click(function(){
+				$("#renaissance").fadeOut();
+			});
+			$(".opt22").click(function(){
+				$("#realism").fadeOut();
+			});
+			$(".opt4").click(function(){
+				$(".TI").fadeOut();
+			});
+			$(".opt14").click(function(){
+				$(".TI2").fadeOut();
+			});
+			$(".opt24").click(function(){
+				$(".TI3").fadeOut();
+			});
+
+			$(".opt1").click(function(){
+				$("#baroque").fadeIn();
+			});
+				
+			$(".opt11").click(function(){
+				$("#renaissance").fadeIn();
+			});
+			$(".opt21").click(function(){
+				$("#realism").fadeIn();
+			});
+			$(".opt3").click(function(){
+				$(".TI").fadeIn();
+			});
+			$(".opt13").click(function(){
+				$(".TI2").fadeIn();
+			});
+			$(".opt23").click(function(){
+				$(".TI3").fadeIn();
+			});
+			
+		});
+	</script>
+</head>
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	}
+th, td {
+		padding: 4px;
+		text-align: left
+	}
+</style>
+<body>
+	
+	
+	<div>
+		<form>
+			<input type="text" name="search" value="">
+			<input type="submit" value="Submit">
+		</form>
+		Action:
+		<select>
+		<option value="0">Archive</option> 
+		<option value="1">Edit</option> 
+		<option value="2">Delete</option>
+		<option value="3">Collections</option>		
+		</select>
+	
+	
+		Genre:
+		<select>
+		<option value="0">Baroque</option>
+		<option value="1">Renaissance</option> 
+		<option value="2">Realism</option> 
+		</select>
+	</div>
+	
+
+		<table>
+		
+			<tr>
+			<td></td>
+			<td></td>
+				<th>Title</th>
+				<th colspan="2">Artist</th>
+				<th colspan="3">Year</th>
+				<th colspan="4">Genre</th>
+				<th colspan="5">Actions</th>
+			</tr>
+			<form action="">
+				<tr>
+					<td>
+						<input type="radio" class="opt1" name="Art" value="R1">Fade In Image<br>
+						<input type="radio" class="opt2" name="Art" value="R2">Fade Out Image<br>
+						<input type="radio" class="opt3" name="Art" value="R3">Fade In Text<br>
+						<input type="radio" class="opt4" name="Art" value="R4">Fade Out Text<br>
+					</td>
+					<td>
+					<img src="baroque1.jpg" id="baroque" alt="I don't understand this art" style="width:289px;height:179px;">
+					</td>
+					<td>
+						<p class="TI">De Matteis Triumph of the Immaculate Anagoria</p>
+					</td>
+					<td colspan="2">
+						<p class="TI">Paolo de Martteis</p>
+					</td>
+					<td colspan="3">
+						<p class="TI">1710-1715</p>
+					</td>
+					<td colspan="4">
+						<p class="TI">Baroque</p>
+
+					</td>
+					<td colspan="5">
+						<a href="http://www.google.ca">
+							<button type="button">Archive</button>
+							<button type="button">Edit</button>
+							<button type="button">Delete</button>
+							<button type="button">Collections</button>
+						</a>
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type="radio" class="opt11" name="Art2R" value="R21">Fade In Image<br>
+					<input type="radio" class="opt12" name="Art2R" value="R22">Fade Out Image<br>
+					<input type="radio" class="opt13" name="Art2R" value="R23">Fade In Text<br>
+					<input type="radio" class="opt14" name="Art2R" value="R24">Fade Out Text<br>
+					</td>
+					<td><img src="renaissance.jpg" id="renaissance" alt="Renaissance Art" style="width:289px;height:179px;"></td>
+					<td>
+						<p class="TI2">The Delivery of the Keys to Saint Peter</p>
+					</td>
+					<td colspan="2">
+						<p class="TI2">Pietro Perugino</p>
+					</td>
+					<td colspan="3">
+						<p class="TI2">1481-1482</p>
+					</td>
+					<td colspan="4">
+						<p class="TI2">Renaissance</p>
+					</td>
+					<td colspan="5">
+						<a href="http://www.google.ca">
+							<button type="button">Archive</button>
+							<button type="button">Edit</button>
+							<button type="button">Delete</button>
+							<button type="button">Collections</button>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type="radio" class="opt21" name="Art3R" value="R31">Fade In Image<br>
+					<input type="radio" class="opt22" name="Art3R" value="R32">Fade Out Image<br>
+					<input type="radio" class="opt23" name="Art3R" value="R33">Fade In Text<br>
+					<input type="radio" class="opt24" name="Art3R" value="R34">Fade Out Text<br>
+					</td>
+					<td><img src="realism2.jpg" id="realism" alt="Realism Art" style="width:300px;height:400px;"></td>
+					<td>
+						<p class="TI3">Mona Lisa</p>
+					</td>
+					<td colspan="2">
+						<p class="TI3">Leonardo Da Vinci</p>
+					</td> 
+					<td colspan="3">
+						<p class="TI3">1503-1517</p>
+					</td>
+					<td colspan="4">
+						<p class="TI3">Realism</p>
+					</td>
+					<td colspan="5">
+						<form action="http:www.google.ca">
+							<input type="submit" value="Archive">
+							<input type="submit" value="Edit">
+							<input type="submit" value="Delete">
+							<input type="submit" value="Collections">
+						</form>
+					</td>
+				</tr>
+			</form>
+	</table>
+</body>
+
+</html>
