@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.wrap{
+			position:fixed;
+			right: 40%;
+		}
+		.bot{
+			position:fixed;
+			right: 45%;
+			bottom:10%;
+			
+		}
+	</style>
+	<title>
+		Advanced Art Work Search
+	</title>
+	<h1>Advanced Art Work Search</h1>
+</head>
+
+<body>
+	
+	<form action="Lab3(Team#20).php" method="post">
+		<div class="wrap">
+		
+		<p>Type:</p>
+		<input type="radio" name="Type" value="N/A" id="rb">Painting
+		<input type="radio" name="Type" value="N/A" id="rb">Sculpture
+		
+			<p>Creative Commons Specification:</p>
+			<input type="checkbox" name="CCS" value="Commercial">Commercial<br>
+			<input type="checkbox" name="CCS" value="Non-commercial">Non-commercial
+			<input type="checkbox" name="CCS" value="Derrivative">Derrivative
+			<input type="checkbox" name="CCS" value="Non-derrivative">Non-derrivative
+		
+		</div>
+	
+		<div>
+			Title: <input type="text" name="title"><br> 
+			Description:<input type="text" name="title"><br> 
+			Choose Subject
+			<select>
+				<option value="0">Landscape</option> 
+				<option value="1">Portrait</option> 	
+			</select><br>
+			Choose Genre
+			<select>
+				<option value="0">Abstract</option> 
+				<option value="1">Baroque</option>
+				<option value="2">Renaissance</option> 
+				<option value="3">Realism</option> 
+			</select><br>
+			Year:<input type="text" name="title"><br> 
+			Museum:<input type="text" name="title"> 
+			
+		</div>
+		<div class="bot">
+			<input type="submit" value="Submit Query">
+			<input type="submit" value="Clear Form">
+		</div>
+		<input type="submit" value="Clear Form">
+	</form>
+</body>
+
+</html>
