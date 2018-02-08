@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .wrap{
+      position:fixed;
+	  right: 40%;
+	}
+	.bot{
+		position:fixed;
+		right: 45%;
+		bottom:10%;
+	}
+	.radio, .checkbox {
+		margin-left: 20px;
+	}
+	.form-info {
+		margin-left: 10px;
+	}
+	textarea {
+		resize: none;
+	}
+	</style>
+	<title>
+		Edit an Artwork
+	</title>
+</head>
+
+<body>
+
+	<form action="lab3-t20.php" method="POST">
+		<h1>Edit an Artwork</h1>
+
+		<div class="wrap">
+
+			<p>Type:</p>
+			<input class='radio' type="radio" name="rdb" value="painting">Painting
+			<input class='radio' type="radio" name="rdb" value="sculpture">Sculpture
+
+			<p>Creative Commons Specification:</p>
+			<input class='checkbox' type="checkbox" name="CCS[]" value="Commercial">Commercial<br>
+			<input class='checkbox' type="checkbox" name="CCS[]" value="Non-commercial">Non-commercial
+			<input class='checkbox' type="checkbox" name="CCS[]" value="Derivative">Derivative Work
+			<input class='checkbox' type="checkbox" name="CCS[]" value="Non-derivative">Non-derrivative Work
+
+		</div>
+		
+		<div>
+			<table border="0">
+				<tr>
+					<td>Title:</td>
+					<td><input class='form-info' type="text" name="title"/></td>
+				</tr>
+
+				<tr>
+					<td>Description: </td>
+					<td><textarea class='form-info' type="text" name="description" rows="4" cols="50"></textarea></td>
+				</tr>
+				<tr>
+					<td>Choose Subject:</td>
+					<td><select class='form-info' name="subject">
+						<option value="landscape">Landscape</option>
+						<option value="portrait">Portrait</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Choose Genre:</td>
+					<td><select class='form-info' name="genre">
+						<option value="abstract">Abstract</option>
+						<option value="baroque">Baroque</option>
+						<option value="renaissance">Renaissance</option>
+						<option value="realism">Realism</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Year:</td>
+					<td><input class='form-info' type="text" name="year"></td>
+				</tr>
+				<tr>
+					<td>Museum:</td>
+					<td><input class='form-info' type="text" name="museum"></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="bot">
+			<input type="SUBMIT" value="Submit Query">
+			<input type="RESET" value="Clear Form">
+		</div>
+	</form>
+</body>
+
+</html>
+
+
